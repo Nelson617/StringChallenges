@@ -14,12 +14,14 @@ public class A_NameFinder {
     public A_NameFinder() {
         String email = "kim_possible25@milton.edu";
         System.out.println("Username: " + findUsername(email)); // Output: Username: kim_possible25
+        A_NameFinder a = new A_NameFinder();
     }
 
     public String findUsername(String email) {
         /* TODO: your code goes here */
-
-        return ""; // this is a temporary return to avoid errors
+        int end = email.indexOf("@");
+        String username = email.substring(0, end);
+        return username; // this is a temporary return to avoid errors
     }
 
 }

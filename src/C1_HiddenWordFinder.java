@@ -14,10 +14,20 @@ public class C1_HiddenWordFinder {
     public C1_HiddenWordFinder() {
         String sentence = "This is a test startHelloend string.";
         findHiddenWord(sentence);  // Output: Hidden word: Hello
+
+
     }
+
+    boolean findHiddenWord;
+
 
     public void findHiddenWord(String sentence) {
         /* TODO: your code goes here */
+
+
+
+        findHiddenWord("Hello");
+        System.out.println(findHiddenWord);
 
     }
 
